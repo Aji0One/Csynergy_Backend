@@ -16,7 +16,7 @@ app.use(express.json());
 app.use(cors());
 
 app.get("/", (req, res) => {
-  res.json({ message: "Welcome! Csynergy API by Sai Chakri" });
+  res.json({ message: "Welcome! Csynergy API" });
 });
 
 app.use("/projects", project);
@@ -26,5 +26,5 @@ app.use("/task", taskManage);
 app.use("/calc", calculation);
 
 app.listen(process.env.PORT || 3001, () => {
-  console.log(`Welcome to Csynergy API by saichakri! Server runs at port ${process.env.PORT || 3001}`);
+  console.log(`Welcome to Csynergy API! Server runs at port ${process.env.PORT || 3001}`);
 });
